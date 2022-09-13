@@ -1,21 +1,16 @@
 // quiz1.cpp : This file contains the 'main' function. Program execution begins and ends there.
 //
-
 #include <iostream>
 #include <stdlib.h>
+#include "quiz1.h";
+#include "quiz1_double.h";
+
 using namespace std;
 	
 int main()
 {
-	int f1;
-	int f2;
-	int f3;
-	cin >> f1 >> f2 >> f3;
-	int c1 = (f1 - 32) * 5 / 9;
-	int c2 = (f2 - 32) * 5 / 9;
-	int c3 = (f3 - 32) * 5 / 9;
-	cout << c1 << endl << c2 << endl << c3 << endl;
-	system("pause");
+	Quiz1();
+	Quiz1Double();
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
