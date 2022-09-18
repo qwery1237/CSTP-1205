@@ -1,22 +1,29 @@
-// Day3.cpp : This file contains the 'main' function. Program execution begins and ends there.
-//
-
-#include <iostream>
+﻿#include <iostream>
 #include <stdlib.h>
+#include "SwitchCase.h"
+#include "BasicPointers.h"
 using namespace std;
 
 int main()
 {
-    std::cout << "Hello World!\n";
+
+    //SwitchCase1();
+    //SwitchCase2();
+    //BasicPointers();
+    
+    //int x = 10;
+    //int y = 20;
+    //SwapCopies(x, y);
+    //cout << x << y << endl;
+    //Swap(&x, &y);
+    //cout << x << y << endl;
+
+    int arr[10] = { 1,2,3,4,5,6,7,8,9,10 };
+    bool test = (&arr[1] + 1 == &arr[2]); // 주소에 1 더하면 배열 내 다음 요소로 감.
+    cout << &arr[1] << endl << &arr[2] << endl << test << endl;
+    InitializeArray(&arr[0], 10);
+    for (int el : arr) {
+        cout << el << endl;
+    }
+    system("pause");
 }
-
-// Run program: Ctrl + F5 or Debug > Start Without Debugging menu
-// Debug program: F5 or Debug > Start Debugging menu
-
-// Tips for Getting Started: 
-//   1. Use the Solution Explorer window to add/manage files
-//   2. Use the Team Explorer window to connect to source control
-//   3. Use the Output window to see build output and other messages
-//   4. Use the Error List window to view errors
-//   5. Go to Project > Add New Item to create new code files, or Project > Add Existing Item to add existing code files to the project
-//   6. In the future, to open this project again, go to File > Open > Project and select the .sln file
