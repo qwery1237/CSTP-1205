@@ -15,6 +15,7 @@ void Q3Print(bool* pi, int n) {
 	}
 }
 
+// Q4-A
 void Q4ChangeAll(bool* pi, int n, bool val) {
 	int i = 0;
 	if (val) {
