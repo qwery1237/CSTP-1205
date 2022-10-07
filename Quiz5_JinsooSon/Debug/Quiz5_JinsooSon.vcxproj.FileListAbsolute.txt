@@ -1,1 +1,2 @@
 C:\Users\000455846\C++\CSTP-1205\Quiz5_JinsooSon\Debug\Quiz5_JinsooSon.exe
+C:\Users\000455846\CSTP-1205\Quiz5_JinsooSon\Debug\Quiz5_JinsooSon.exe
