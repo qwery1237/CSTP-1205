@@ -1,0 +1,3 @@
+﻿  Assignment6_JinsooSon.cpp
+C:\Users\000455846\C++\CSTP-1205\Assignment6_JinsooSon\Assignment6.h(11,12): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+  Assignment6_JinsooSon.vcxproj -> C:\Users\000455846\C++\CSTP-1205\Assignment6_JinsooSon\Debug\Assignment6_JinsooSon.exe
