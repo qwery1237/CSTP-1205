@@ -1,0 +1,3 @@
+I don't know why whenever I run this code,
+It skips the first line entering.
+So I added if statement when user input is empty do it again....
