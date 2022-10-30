@@ -1,29 +1,33 @@
 MIDTERM - Sept 2022 - Intro to C++ Prog.		
+	// ======================================
+	// Mark: 85/100
+	// npd stands for "No Points are Deducted"
+	// ======================================
 		
 1 - C
 2 - D
 3 - A
 4 - C
-5 - 
+5 - 						// <<<<< you should use "enum class" to define this (-10) >>>>>
 6 - false
 7 - 
-void isVowel (Char& ptr)
+void isVowel (Char& ptr)											// <<<<< bool isVowel (char* ptr) (-3) >>>>>
 {
-	while (ptr) {
+	while (ptr) {													// <<<<< no need for a while loop (-2) >>>>>
 		if (*ptr == 'a' || *ptr == 'e' || *ptr == 'i'|| *ptr == 'o' || *ptr == 'u') {
-			std::cout << *ptr << " is a vowel!" << std::endl;
+			std::cout << *ptr << " is a vowel!" << std::endl;		// <<<<< return true; (npd) >>>>>
 		}else {
-			std::cout << *ptr << " is not a vowel!" << std::endl;
+			std::cout << *ptr << " is not a vowel!" << std::endl;	// <<<<< return false; (npd) >>>>>
 		}
 		ptr++;
 	}	
 }
 8 - 
-Class Employee
+Class Employee							// <<<<< class is all lowercase (npd) >>>>>
 {
 private:
 	int id;
-	String first_name;
+	String first_name;					// <<<<< string is all lowercase (npd) >>>>>
 	String last_name;
 	int year;
 	String address;
