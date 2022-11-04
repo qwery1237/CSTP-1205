@@ -8,12 +8,14 @@ Fraction::Fraction()
 
 Fraction::Fraction(int n)
 {	
-	SetN(n);
+	num = n;
+	den = 0;
 }
 
 Fraction::Fraction(int n, int d)
 {
-	Set(n, d);
+	num = n;
+	den = d;
 }
 Fraction::Fraction(Fraction const& src) 
 {
