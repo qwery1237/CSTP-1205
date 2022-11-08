@@ -26,6 +26,7 @@ void TestGame()
 	while (isPlaying)
 	{
 		isPlaying = GameManagement::RunGame();
+
 	}
 }
 int main() {

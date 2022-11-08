@@ -10,9 +10,9 @@ void GameManagement::WelcomePlayer(const string& name)
 
 bool GameManagement::RunGame()
 {
-	GameManagement::GivePlayerOptions();
+	GivePlayerOptions();
 	string playerInput;
-	GameManagement::GetPlayerInput(playerInput);
+	GetPlayerInput(playerInput);
 
 	bool shouldRunGame = EvaluatePlayerInput(playerInput) != PlayerOptions::Quit;
 	return shouldRunGame;
@@ -21,8 +21,6 @@ bool GameManagement::RunGame()
 void GameManagement::GivePlayerOptions()
 {
 	cout << "Please enter your options NewGame(N) or Quit(Q)" << endl;
-	string playerInput;
-	GameManagement::GetPlayerInput(playerInput);
 	// assignment 10: 
 	// provide the text that explains (lists) the options
 	// ask user to enter the input
@@ -36,13 +34,12 @@ void GameManagement::GetPlayerInput(string& playerInput)
 PlayerOptions GameManagement::EvaluatePlayerInput(const string& input)
 {
 	// assignment 10: check the validity and return the appropriate enum value
-	if (input == "N") {
+	if (input == "N" || input == "n") {
 		return PlayerOptions::NewGame;
 	}
-	if (input == "Q") {
+	else {
 		return PlayerOptions::Quit;
 	}
-	return PlayerOptions::Unknown;
 }
 
 Player GameManagement::GetPlayerInformation()
@@ -53,9 +50,9 @@ Player GameManagement::GetPlayerInformation()
 	// remove this line after adding your assignment
 	string playerName, username;
 	cout << "Enter your name."<< endl;
-	GameManagement::GetPlayerInput(username);
+	GetPlayerInput(username);
 	cout << "Enter a player name." << endl;
-	GameManagement::GetPlayerInput(playerName);
+	GetPlayerInput(playerName);
 	Player player(playerName, username);
 
 	return player;
