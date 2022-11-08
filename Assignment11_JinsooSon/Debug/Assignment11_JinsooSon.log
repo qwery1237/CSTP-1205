@@ -1,0 +1,3 @@
+﻿  Game.cpp
+C:\Users\000455846\C++\CSTP-1205\Assignment11_JinsooSon\Game.cpp(34,13): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+  Assignment11_JinsooSon.vcxproj -> C:\Users\000455846\C++\CSTP-1205\Assignment11_JinsooSon\Debug\Assignment11_JinsooSon.exe
