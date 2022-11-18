@@ -49,11 +49,14 @@ Player GameManagement::GetPlayerInformation()
 
 	// remove this line after adding your assignment
 	string playerName, username;
+	int id;
 	cout << "Enter your name." << endl;
 	GetPlayerInput(username);
 	cout << "Enter a player name." << endl;
 	GetPlayerInput(playerName);
-	Player player(playerName, username);
+	cout << "Enter your ID." << endl;
+	cin >> id;
+	Player player(playerName, username,id);
 
 	return player;
 }

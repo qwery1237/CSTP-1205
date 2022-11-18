@@ -1,11 +1,12 @@
 #include "Player.h"
 
 Player::Player()
+	: m_username(""),m_name(""), Entity(0)
 {
 }
 
-Player::Player(const string& username, const string& name)
-	: m_username(username), m_name(name)
+Player::Player(const string& username, const string& name,const int& id)
+	: m_username(username), m_name(name), Entity(id)
 	// initializers execute before the constructor begins executing
 {
 	// some code 
@@ -47,6 +48,7 @@ void Player::SetName(const string& name, const string& lastName)
 	this->m_name.append(lastName);
 }
 
+
 // Assignment Operator for our Player class
 const Player& Player::operator=(const Player& player)
 {
@@ -54,4 +56,8 @@ const Player& Player::operator=(const Player& player)
 	this->m_username = player.m_username;
 
 	return *this;
+}
+
+void Player::Update()
+{
 }

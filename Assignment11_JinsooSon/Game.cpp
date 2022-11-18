@@ -30,6 +30,7 @@ void Game::StartGame()
 {
 	Player player = GetPlayerInformation();
 	WelcomePlayer(player.GetName());
+	cout << "your ID is " << player.GetId() << endl;
 	while (RunGame()) {
 		srand(time(NULL));
 		unsigned int randNum = rand() % 50;
